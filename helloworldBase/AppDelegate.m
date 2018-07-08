@@ -1,22 +1,30 @@
 //
 //  AppDelegate.m
-//  helloworldBase
+//  testProject
 //
-//  Created by Shunsuke Tsujimoto on 2016/03/26.
-//  Copyright © 2016年 Shunsuke Tsujimoto. All rights reserved.
+//  Created by Shunsuke Tsujimoto on 2016/03/19.
+//  Copyright (c) 2016年 Shunsuke Tsujimoto. All rights reserved.
 //
 
 #import "AppDelegate.h"
-
-@interface AppDelegate ()
-
-@end
+#import "ViewController.h"
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    // UIWindowの生成
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    
+    // 最初に表示されるViewControllerを生成
+    ViewController *fvc = [[ViewController alloc] init];
+    self.window.rootViewController = fvc;
+    [self.window makeKeyAndVisible];
+    
+    suspendFlg = false;
+    [self main : fvc.glView];
+    
     return YES;
 }
 
@@ -40,6 +48,12 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void) main:(GLViewController *)glViewCon{
+//    while(!suspendFlg){
+        [glViewCon viewUpdate];
+//    }
 }
 
 @end
