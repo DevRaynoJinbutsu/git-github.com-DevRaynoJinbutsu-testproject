@@ -26,6 +26,7 @@ CPPTest::CPPTest()
     printf("destr!:%s\n",deStr.c_str());
 
     // xxtea復号
+    
     size_t len2 = 0;
     const char *decrypt_data = (const char *)xxtea_decrypt(deStr.c_str(), deStr.size(), SECURITY_KEY, &len2);
     printf("len2:%ld\n",len2);
