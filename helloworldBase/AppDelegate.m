@@ -9,13 +9,15 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 
+#import "NCMB/NCMB.h"
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // UIWindowの生成
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
-    
+    NSLog(@"%f %f %f %f",[UIScreen mainScreen].bounds.origin.x,[UIScreen mainScreen].bounds.origin.y,[UIScreen mainScreen].bounds.size.width,[UIScreen mainScreen].bounds.size.height);
     
     // 最初に表示されるViewControllerを生成
     ViewController *fvc = [[ViewController alloc] init];
@@ -24,6 +26,24 @@
     
     suspendFlg = false;
     [self main : fvc.glView];
+    
+    // APIキーの設定とSDK初期化
+    [NCMB setApplicationKey:@"f5d606bee963b8f0fd9e57572b04faeb8bf85b5e0e655d8196f3cc714bf0c676" clientKey:@"fb3d8f632aad6eead2094a9a5402fcca8e8466ec05f799be56066110ac341898"];
+
+    // クラスのNCMBObjectを作成
+    NCMBObject *object = [NCMBObject objectWithClassName:@"TestClass"];
+    // オブジェクトに値を設定
+    [object setObject:@"Hello, NCMB!" forKey:@"message"];
+    // データストアへの登録
+    [object saveInBackgroundWithBlock:^(NSError *error) {
+        if (error){
+            // 保存に失敗した場合の処理
+            
+        } else {
+            // 保存に成功した場合の処理
+            
+        }
+    }];
     
     return YES;
 }
