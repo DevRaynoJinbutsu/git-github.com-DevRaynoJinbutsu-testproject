@@ -49,7 +49,6 @@
 		8FA04C241FF681F10017DE7E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA04C191FF681F10017DE7E /* AppDelegate.m */; };
 		8FA04C251FF681F10017DE7E /* GLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA04C1B1FF681F10017DE7E /* GLViewController.m */; };
 		8FA04C261FF681F10017DE7E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FA04C1C1FF681F10017DE7E /* Images.xcassets */; };
-		8FA04C271FF681F10017DE7E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FA04C1D1FF681F10017DE7E /* Info.plist */; };
 		8FA04C281FF681F10017DE7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA04C1E1FF681F10017DE7E /* main.m */; };
 		8FA04C291FF681F10017DE7E /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 8FA04C201FF681F10017DE7E /* Shader.fsh */; };
 		8FA04C2A1FF681F10017DE7E /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 8FA04C211FF681F10017DE7E /* Shader.vsh */; };
@@ -143,7 +142,6 @@
 		8FA04C1A1FF681F10017DE7E /* GLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLViewController.h; sourceTree = "<group>"; };
 		8FA04C1B1FF681F10017DE7E /* GLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLViewController.m; sourceTree = "<group>"; };
 		8FA04C1C1FF681F10017DE7E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		8FA04C1D1FF681F10017DE7E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FA04C1E1FF681F10017DE7E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8FA04C201FF681F10017DE7E /* Shader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.fsh; sourceTree = "<group>"; };
 		8FA04C211FF681F10017DE7E /* Shader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.vsh; sourceTree = "<group>"; };
@@ -353,7 +351,6 @@
 				8FA04C1A1FF681F10017DE7E /* GLViewController.h */,
 				8FA04C1B1FF681F10017DE7E /* GLViewController.m */,
 				8FA04C1C1FF681F10017DE7E /* Images.xcassets */,
-				8FA04C1D1FF681F10017DE7E /* Info.plist */,
 				8FA04C1E1FF681F10017DE7E /* main.m */,
 				8FA04C1F1FF681F10017DE7E /* Shaders */,
 				8FA04C221FF681F10017DE7E /* ViewController.h */,
@@ -438,7 +435,6 @@
 				8F02589420F1B5C8005D5575 /* README_zh_CN.md in Resources */,
 				8FA04C291FF681F10017DE7E /* Shader.fsh in Resources */,
 				8F02589920F1B5C9005D5575 /* README.md in Resources */,
-				8FA04C271FF681F10017DE7E /* Info.plist in Resources */,
 				8F05B6F721496D4300ECBD26 /* NCMB_Info.plist in Resources */,
 				8FA04C261FF681F10017DE7E /* Images.xcassets in Resources */,
 			);
